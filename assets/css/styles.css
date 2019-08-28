@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #eeeeee;
+    font-family: 'Poppins', sans-serif;
+    color: #777777;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+h1 {
+    background-color: teal;
+    color: white;
+    font-size: 26px;
+    display: inline-block;
+    padding: 1em;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #4aaaa5;
+}
+
+.navbar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.navbar ul {
+    position: absolute;
+    list-style-type: none;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline;
+    padding: 1em 1em;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #212121;
+    transition: 0.2s;
+}
+
+.navbar ul li a:hover {
+    color: #4aaaa5;
+}
+
+.about {
+    margin-top: 10em;
+    padding: 2em;
+    width: 50vw;
+    margin-bottom: 50vw;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.about img {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+.about p {
+    width: 92%;
+}
+
+.contact {
+    margin-top: 10em;
+    padding: 1em;
+    width: 50vw;
+    margin-bottom: 50vw;
+}
+
+.contact input {
+    font-size: 20px;
+    padding: 0.5em 0 0.5em 0.5em;
+    border: solid 1px #212121;
+    border-radius: 5px;
+    width: 99%;
+}
+
+.contact textarea {
+    width: 100%;
+    border: solid 1px #212121;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 1em;
+}
+
+.contact button {
+    padding: 1em 5em;
+    background-color: #4aaaa5;
+    font-size: 22px;
+    margin-top: 1em;
+    color: white;
+    border: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.portfolio {
+    margin-top: 10em;
+    width: 50vw;
+    margin-bottom: 50vw;
+    height: 600px;
+}
+.portfolio a{
+    height: auto;
+}
+.port-img {
+    position: relative;
+    float: left;
+    margin: 0.5rem 1rem;
+    transition: 0.5s;
+}
+
+.port-img:hover {
+    transform: scale(1.1);
+}
+
+.port-img img {
+    width: 200px;
+    height: 300px;
+}
+
+.port-img h4.label {
+    position: absolute;
+    color: black;
+    background-color: #4aaaa5;
+    text-align: center;
+    width: 100%;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer {
+    text-align: center;
+    height: 100px;
+    background-color: #666666;
+    color: #fff;
+    width: 100vw;
+}
+
+footer hr {
+    height: 6px;
+    background-color: #4aaaa5;
+}
+
+#port-foot {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 980px) {
+    .about {
+        margin-bottom: 50vw;
+    }
+    .portfolio {
+        margin-bottom: 50vw;
+    }
+    .contact {
+        margin-bottom: 50vw;
+    }
+
+}
+
+@media only screen and (max-width: 760px) {
+    .about {
+        width: auto;
+        margin-bottom: 20em;
+    }
+    .portfolio {
+        width: auto;
+        margin-bottom: 20em;
+    }
+    .contact {
+        width: auto;
+        margin-bottom: 20em;
+    }
+
+
+}
+
+@media only screen and (max-width: 640px) {
+    .about {
+        margin-top: 5em;
+        width: auto;
+        margin-bottom: 20em;
+    }
+    .about img{
+        width: 100%;
+        height: auto;
+    }
+    .portfolio{
+        margin-top: 3em;
+    }
+    .contact{
+        margin-top: 3em;
+        margin-bottom: 20em;
+    }
+    .navbar{
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .navbar .logo{
+        position: static;
+        left: 0;
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+    }
+    .navbar ul {
+        position: static;
+        width: 100%;
+        text-align: center;
+        padding-top: 2em;
+    }
+    
+
+}
